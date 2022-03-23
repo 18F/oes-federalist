@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import './App.css'
 import { Form } from 'react-formio';
 import uswds from '@formio/uswds';
 import { Formio } from 'formiojs';
 import LoadingOverlay from 'react-loading-overlay';
 import { FadeLoader } from 'react-spinners';
+import { GovBanner } from '@trussworks/react-uswds';
 Formio.use(uswds);
 export const App = () => {
   const [loader, setLoader] = useState(true);
@@ -11,7 +13,9 @@ export const App = () => {
     setLoader(false);
   };
   return (
-    <div style={{margin: '5rem 15rem 1rem 15rem'}}>
+    <>
+  <GovBanner aria-label="Official government website" />
+    <div className="main-content">
     <LoadingOverlay
       active={loader}
       styles={{ overlay: base => ({ ...base, background: 'rgba(0, 0, 0, 0.1)' }) }}
@@ -20,6 +24,7 @@ export const App = () => {
       <Form src="https://portal-test.forms.gov/oes-dev/oessurveyforma" onRender={handelOnFormReady} />
     </LoadingOverlay>
     </div>
+    </>
   );
 };
 

@@ -28,7 +28,16 @@
 .App-link {
   color: #61dafb;
 }
-
+@media (min-width: 64em) {
+  .main-content {
+    margin: 5rem 15rem 1rem 15rem;
+  }
+}
+@media (max-width: 63.99em) {
+  .main-content {
+    margin: 1rem;
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

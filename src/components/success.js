@@ -5,7 +5,7 @@ export const Success = () => {
       <div className="usa-alert usa-alert--success">
         <div className="usa-alert__body">
           <h3 className="usa-alert__heading">
-            You submitted the form Successfully
+            You submitted the form successfully
           </h3>
         </div>
       </div>

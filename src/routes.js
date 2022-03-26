@@ -7,7 +7,7 @@ const Routing = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/site/18f/oes-federalist/" element={<Success />} />
+        <Route path="/site/18f/oes-federalist/success" element={<Success />} />
         <Route
           path="/site/18f/oes-federalist/form/version-a"
           element={<Forms />}

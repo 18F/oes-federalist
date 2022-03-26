@@ -21,7 +21,8 @@ export const App = () => {
       styles={{ overlay: base => ({ ...base, background: 'rgba(0, 0, 0, 0.1)' }) }}
       spinner={<FadeLoader color={'#4A90E2'} />}
     >
-      <Form src="https://portal-test.forms.gov/oes-dev/oessurveyforma" onRender={handelOnFormReady} />
+      <Form src="https://portal-test.forms.gov/oes-dev/oessurveyforma"
+       onRender={handelOnFormReady} />
     </LoadingOverlay>
     </div>
     </>

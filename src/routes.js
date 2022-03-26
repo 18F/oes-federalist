@@ -7,13 +7,13 @@ const Routing = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/site/18f/oes-federalist/success" element={<Success />} />
+        <Route path="/success" element={<Success />} />
         <Route
-          path="/site/18f/oes-federalist/form/version-a"
+          path="/form/version-a"
           element={<Forms />}
         />
         <Route
-          path="/site/18f/oes-federalist/form/version-b"
+          path="/form/version-b"
           element={<Forms />}
         />
       </Routes>

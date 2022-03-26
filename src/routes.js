@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Forms from "./components/forms";
 import Success from "./components/success";
-
 const Routing = () => {
   return (
     <BrowserRouter>

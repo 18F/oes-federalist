@@ -20,9 +20,9 @@ const Forms = () => {
   };
   const location = useLocation();
   const formSrcDev =
-    location.pathname === "/site/18f/oes-federalist/form/version-a"
+    location.pathname === "/site/18f/oes-federalist/form/version-a/"
       ? "https://portal-test.forms.gov/oes-dev/oessurveyforma"
-      : location.pathname === "/site/18f/oes-federalist/form/version-b"
+      : location.pathname === "/site/18f/oes-federalist/form/version-b/"
       ? "https://portal-test.forms.gov/oes-dev/oessurveyformb"
       : "";
   if (done) {

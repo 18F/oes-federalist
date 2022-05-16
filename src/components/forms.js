@@ -21,10 +21,8 @@ const Forms = () => {
   const location = useLocation();
   const formSrcDev =
     location.pathname === '/form/version-a'
-      ? "https://portal-test.forms.gov/oes-dev/oessurveyforma"
-      : location.pathname === `${CONSTANT.BASE_URL}/form/version-b`
-      ? "https://portal-test.forms.gov/oes-dev/oessurveyformb"
-      : "";
+      ? "https://portal-test.forms.gov/oes-dev/oessurveyforma":
+  "https://portal-test.forms.gov/oes-dev/oessurveyformb";
   if (done) {
     return <Navigate to={`${CONSTANT.BASE_URL}/success`} />;
   }

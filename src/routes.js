@@ -4,16 +4,17 @@ import Forms from "./components/forms";
 import Success from "./components/success";
 import { CONSTANT } from './components/constants';
 const Routing = () => {
+//  `${CONSTANT.BASE_URL}
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={`${CONSTANT.BASE_URL}/success`} element={<Success />} />
+        <Route path='/success' element={<Success />} />
         <Route
-          path={`${CONSTANT.BASE_URL}/form/version-a`}
+          path='/form/version-a'
           element={<Forms />}
         />
         <Route
-          path={`${CONSTANT.BASE_URL}/form/version-b`}
+          path='/form/version-b'
           element={<Forms />}
         />
       </Routes>

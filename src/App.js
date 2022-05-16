@@ -9,7 +9,7 @@ Formio.use(uswds);
 export const App = () => {
   return (
     <>
-  <GovBanner aria-label="Official government website" />
+    <GovBanner aria-label="Official government website" />
     <div className="main-content">
       <Routing />
     </div>

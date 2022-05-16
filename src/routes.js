@@ -1,20 +1,21 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Forms from "./components/forms";
+import Forma from "./components/form-a";
+import Formb from "./components/form-b";
 import Success from "./components/success";
 import { CONSTANT } from './components/constants';
 const Routing = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={`${CONSTANT.BASE_URL}/success`} element={<Success />} />
+        <Route path='/success' element={<Success />} />
         <Route
-          path={`${CONSTANT.BASE_URL}/form/version-a`}
-          element={<Forms />}
+          path='/form/version-a'
+          element={<Forma />}
         />
         <Route
-          path={`${CONSTANT.BASE_URL}/form/version-b`}
-          element={<Forms />}
+          path='form/version-b'
+          element={<Formb/>}
         />
       </Routes>
     </BrowserRouter>

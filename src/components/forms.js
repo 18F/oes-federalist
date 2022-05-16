@@ -12,6 +12,7 @@ Formio.use(uswds);
 const Forms = () => {
   const [loader, setLoader] = useState(true);
   const [done, setDone] = useState(false);
+  let formSrcDev = '';
   const handleOnSubmitDone = () => {
     setDone(true);
   };
@@ -19,10 +20,14 @@ const Forms = () => {
     setLoader(false);
   };
   const location = useLocation();
-  const formSrcDev =
-    location.pathname === '/version-a'
-      ? "https://portal-test.forms.gov/oes-dev/oessurveyforma":
-  "https://portal-test.forms.gov/oes-dev/oessurveyformb";
+  console.log(CONSTANT.BASE_URL);
+  if(location.pathname === `${CONSTANT.BASE_URL}/form/version-a`){
+    formSrcDev = "https://portal-test.forms.gov/oes-dev/oessurveyforma";
+  }
+  if(location.pathname === `${CONSTANT.BASE_URL}/form/version-b`){
+    formSrcDev = "https://portal-test.forms.gov/oes-dev/oessurveyformb";
+  }
+  
   if (done) {
     return <Navigate to={`${CONSTANT.BASE_URL}/success`} />;
   }

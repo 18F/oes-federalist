@@ -1,4 +1,4 @@
 export const CONSTANT = {
-    BASE_URL: process.env.PUBLIC_URL,
+    BASE_URL: '/site/18f/oes-federalist/',
     ENV: process.env.NODE_ENV
 };

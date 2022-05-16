@@ -20,7 +20,8 @@ const Forms = () => {
     setLoader(false);
   };
   const location = useLocation();
-  console.log(CONSTANT.BASE_URL);
+  console.log("Base url " + CONSTANT.BASE_URL);
+  console.log("location.pathname " + location.pathname);
   if(location.pathname === `${CONSTANT.BASE_URL}/form/version-a`){
     formSrcDev = "https://portal-test.forms.gov/oes-dev/oessurveyforma";
   }
@@ -40,7 +41,7 @@ const Forms = () => {
       spinner={<FadeLoader color={"#4A90E2"} />}
     >
       <Form
-        src={formSrcDev}
+        src="https://portal-test.forms.gov/oes-dev/oessurveyforma"
         onRender={handelOnFormReady}
         onSubmitDone={handleOnSubmitDone}
       />

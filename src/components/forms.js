@@ -20,7 +20,7 @@ const Forms = () => {
   };
   const location = useLocation();
   const formSrcDev =
-    location.pathname === `${CONSTANT.BASE_URL}/form/version-a`
+    location.pathname === '/form/version-a'
       ? "https://portal-test.forms.gov/oes-dev/oessurveyforma"
       : location.pathname === `${CONSTANT.BASE_URL}/form/version-b`
       ? "https://portal-test.forms.gov/oes-dev/oessurveyformb"

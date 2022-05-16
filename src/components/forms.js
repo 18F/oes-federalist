@@ -22,10 +22,10 @@ const Forms = () => {
   const location = useLocation();
   console.log("Base url " + CONSTANT.BASE_URL);
   console.log("location.pathname " + location.pathname);
-  if(location.pathname === `${CONSTANT.BASE_URL}/form/version-a`){
+  if(location.pathname === '/form/version-a'){
     formSrcDev = "https://portal-test.forms.gov/oes-dev/oessurveyforma";
   }
-  if(location.pathname === `${CONSTANT.BASE_URL}/form/version-b`){
+  if(location.pathname === '/form/version-b'){
     formSrcDev = "https://portal-test.forms.gov/oes-dev/oessurveyformb";
   }
   
@@ -41,7 +41,7 @@ const Forms = () => {
       spinner={<FadeLoader color={"#4A90E2"} />}
     >
       <Form
-        src="https://portal-test.forms.gov/oes-dev/oessurveyforma"
+        src={formSrcDev}
         onRender={handelOnFormReady}
         onSubmitDone={handleOnSubmitDone}
       />

@@ -12,7 +12,6 @@ Formio.use(uswds);
 const Forma = () => {
   const [loader, setLoader] = useState(true);
   const [done, setDone] = useState(false);
-  let formSrcDev = '';
   const handleOnSubmitDone = () => {
     setDone(true);
   };
